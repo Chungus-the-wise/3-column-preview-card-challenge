@@ -1,0 +1,123 @@
+@font-face {
+    font-family: Lexend Deca;
+    src: url(../fonts/Lexend_Deca/LexendDeca-Regular.ttf);
+} 
+
+@font-face {
+    font-family: Big Shoulders Display;
+    src: url(../fonts/Big_Shoulders_Display/BigShouldersDisplay-Regular.ttf);
+}
+
+@media (max-width:1100px){
+    .boxes-container{
+        flex-wrap: wrap;
+    }
+}
+
+body{
+    background-color: hsl(0, 0%, 95%);
+}
+
+main{
+    width: 60%;
+    margin: 100px auto;
+}
+
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    font-family: Lexend Deca;
+    font-weight: 400;
+    line-height: 1.7em;
+    margin: 20% 0;
+    width: 85%;
+}
+
+.boxes-container{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 10px;
+    overflow: clip;
+}
+
+h2{
+    color: hsl(0, 0%, 95%);
+    font-family: Big Shoulders Display;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.container-sedan{
+    background-color: hsl(31, 77%, 52%);
+}
+
+.container-suv{
+    background-color:hsl(184, 100%, 22%);
+}
+
+.container-luxury{
+    background-color: hsl(179, 100%, 13%);
+}
+
+.container-sedan,.container-suv,.container-luxury{
+    padding: 50px 30px;
+}
+
+.container-sedan>.button{
+    font-family: Lexend Deca;
+    font-size: 15px;
+    border: 2px solid hsl(0, 0%, 95%);
+    border-radius: 30px;
+    height: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: hsl(0, 0%, 95%);
+    color:hsl(31, 77%, 52%);
+}
+
+.container-sedan>.button:hover{
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(31, 77%, 52%);
+    transition: 0.5s;
+}
+
+.container-suv>.button{
+    font-family: Lexend Deca;
+    font-size: 15px;
+    border: 2px solid hsl(0, 0%, 95%);
+    border-radius: 30px;
+    height: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: hsl(0, 0%, 95%);
+    color:hsl(184, 100%, 22%);
+}
+
+.container-suv>.button:hover{
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(184, 100%, 22%);
+    transition: 0.5s;
+}
+
+.container-luxury>.button{
+    font-family: Lexend Deca;
+    font-size: 15px;
+    border: 2px solid hsl(0, 0%, 95%);
+    border-radius: 30px;
+    height: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: hsl(0, 0%, 95%);
+    color:hsl(179, 100%, 13%);
+}
+
+.container-luxury>.button:hover{
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(179, 100%, 13%);
+    transition: 0.5s;
+}
+
+.button{
+    margin-bottom: 25%;
+}
