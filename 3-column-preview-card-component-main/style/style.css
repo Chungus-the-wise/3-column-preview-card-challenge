@@ -121,3 +121,12 @@ h2{
 .button{
     margin-bottom: 25%;
 }
+
+@media screen AND (max-width: 1080px){
+    main{
+        max-width: 300px;
+    }
+    .container-sedan,.container-luxury,.container-suv{
+        padding: 50px;
+    }
+}
